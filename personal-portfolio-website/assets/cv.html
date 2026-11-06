@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biruk Taye &mdash; Curriculum Vitae</title>
+    <style>
+      :root {
+        --ink: #1a2230;
+        --muted: #4d5a68;
+        --line: #d9c9a3;
+        --gold: #8b6b2e;
+        --blue: #1a56a0;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: var(--ink);
+        background: #eef2f6;
+        line-height: 1.5;
+        font-size: 0.95rem;
+      }
+
+      .sheet {
+        width: min(820px, calc(100% - 2rem));
+        margin: 2rem auto;
+        background: #fff;
+        padding: 2.4rem 2.6rem;
+        box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+      }
+
+      /* Actions bar */
+      .actions {
+        display: flex;
+        gap: 0.8rem;
+        margin-bottom: 1.2rem;
+      }
+      .actions a, .actions button {
+        font: inherit;
+        border: 1px solid #cfc4a8;
+        background: #fff;
+        padding: 0.45rem 0.8rem;
+        border-radius: 999px;
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--ink);
+      }
+
+      /* Header */
+      .cv-header {
+        display: flex;
+        gap: 1.4rem;
+        align-items: flex-start;
+        border-bottom: 2px solid var(--line);
+        padding-bottom: 1.2rem;
+        margin-bottom: 1.4rem;
+      }
+      .cv-header img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center top;
+        flex-shrink: 0;
+      }
+      .cv-header-info h1 {
+        margin: 0 0 0.15rem;
+        font-size: 2rem;
+        color: var(--ink);
+      }
+      .cv-title {
+        margin: 0 0 0.5rem;
+        color: var(--blue);
+        font-weight: 700;
+        font-size: 1rem;
+      }
+      .cv-meta {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.88rem;
+        line-height: 1.7;
+      }
+      .cv-meta a { color: var(--blue); }
+
+      /* Sections */
+      h2 {
+        font-size: 0.85rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--blue);
+        margin: 1.4rem 0 0.5rem;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 0.25rem;
+      }
+
+      p { margin: 0.3rem 0; }
+
+      ul {
+        margin: 0.3rem 0 0.6rem;
+        padding-left: 1.3rem;
+      }
+      ul li { margin-bottom: 0.2rem; }
+
+      /* Experience entry */
+      .exp-entry { margin-bottom: 1rem; }
+      .exp-entry .exp-link {
+        font-size: 0.8rem;
+        color: var(--muted);
+        display: block;
+        margin-bottom: 0.1rem;
+      }
+      .exp-entry .exp-title {
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0.3rem;
+      }
+      .exp-entry .exp-title span { font-weight: 400; color: var(--muted); }
+      .exp-entry .exp-org {
+        color: var(--muted);
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+      }
+
+      /* Skills grid */
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-top: 0.5rem;
+      }
+      .skills-col h3 {
+        font-size: 0.88rem;
+        margin: 0 0 0.35rem;
+        font-weight: 700;
+      }
+      .skills-col ul { padding-left: 1rem; color: var(--muted); }
+
+      /* Education row */
+      .edu-row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0.3rem;
+        font-weight: 700;
+      }
+      .edu-row span { font-weight: 400; color: var(--muted); }
+
+      @media print {
+        body { background: #fff; }
+        .sheet { width: auto; margin: 0; box-shadow: none; padding: 0; }
+        .actions { display: none; }
+      }
+
+      @media (max-width: 600px) {
+        .skills-grid { grid-template-columns: 1fr; }
+        .cv-header { flex-direction: column; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="sheet">
+      <div class="actions">
+        <a href="../index.html">&larr; Back to portfolio</a>
+        <button type="button" onclick="window.print()">Print / Save as PDF</button>
+      </div>
+
+      <header class="cv-header">
+        <img src="../assets/images/BT.jpg" alt="Biruk Taye" />
+        <div class="cv-header-info">
+          <h1>Biruk Taye</h1>
+          <p class="cv-title">Information Systems Graduate | Web Developer</p>
+          <p class="cv-meta">
+            Phone: +251-97-540-0115<br />
+            Email: <a href="mailto:biruktaye01@gmail.com">biruktaye01@gmail.com</a><br />
+            Address: Bahir Dar, Ethiopia<br />
+            LinkedIn: <a href="https://www.linkedin.com/in/biruk-taye" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/biruk-taye</a><br />
+            GitHub: <a href="https://github.com/BDU123456" target="_blank" rel="noopener noreferrer">https://github.com/BDU123456</a>
+          </p>
+        </div>
+      </header>
+
+      <section>
+        <h2>About Me</h2>
+        <p>
+          I am an Information Systems graduate from Bahir Dar University, Poly Campus with hands-on experience
+          in web development, database design, and system analysis. Skilled in JavaScript, Node.js, MySQL, HTML,
+          CSS, and Git. Passionate about building practical software solutions and eager to contribute to a
+          collaborative development team while continuously learning new technologies.
+        </p>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <div class="exp-entry">
+          <span class="exp-link">https://github.com/BDU123456/Intern-Bridge.git</span>
+          <div class="exp-title">
+            Intern Bridge &mdash; Internship Platform (Web Application)
+            <span>2017 E.C &nbsp;|&nbsp; 2025 G.C</span>
+          </div>
+          <div class="exp-org">Internship Project At Alyah Software Company PLC</div>
+          <ul>
+            <li>Designed and developed a full-stack internship platform</li>
+            <li>Strengthened backend development skills by implementing APIs and managing data using Node.js and MySQL</li>
+            <li>Gained practical experience in authentication and security by integrating JWT-based user login systems</li>
+            <li>Improved database design skills by creating structured relational models</li>
+            <li>Developed problem-solving and debugging skills while handling system integration challenges</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Final Year Project</h2>
+        <div class="exp-entry">
+          <span class="exp-link">https://github.com/zedaAb/final_year_project.git</span>
+          <div class="exp-title">
+            Digital Queue &amp; Appointment System
+            <span>2018 E.C &nbsp;|&nbsp; 2026 G.C</span>
+          </div>
+          <ul>
+            <li>Developed and gaining experience in designing systems for real-world service environments</li>
+            <li>Strengthened skills in system analysis and design by identifying user requirements</li>
+            <li>Implemented appointment scheduling features, improving understanding of time-based data handling</li>
+            <li>Gained experience in database management by organizing patient records and appointment information</li>
+            <li>Enhanced ability to design practical solutions aimed at improving efficiency</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="edu-row">
+          <strong>BSc in Information Systems</strong>
+          <span>Bahir Dar University &nbsp;|&nbsp; 2015&ndash;2018 E.C &nbsp;,&nbsp; 2023&ndash;2026 G.C</span>
+        </div>
+        <ul>
+          <li>CGPA: 3.7</li>
+          <li>Relevant Coursework: Database Systems, Web Development, Networking</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Certificates</h2>
+        <p><strong>Udacity (Ethio-Coders Program)</strong></p>
+        <ul>
+          <li>Programming Fundamentals</li>
+          <li>Data Science Fundamentals</li>
+        </ul>
+        <p><strong>Cisco Networking Academy (CCNA)</strong></p>
+        <ul>
+          <li>Introduction to Networks</li>
+          <li>Switching, Routing, and Wireless Essentials</li>
+        </ul>
+        <p><strong>Hackathon Participation</strong></p>
+        <ul>
+          <li>Participated in Cursor Hackathon, Bahir Dar University</li>
+        </ul>
+        <p><strong>Bahir Dar University Trainings</strong></p>
+        <ul>
+          <li>e-SHE Online Training Program</li>
+          <li>Employability and Job Readiness Training</li>
+          <li>Design Thinking Training</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skills-col">
+            <h3>Programming Languages</h3>
+            <ul>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>C++</li>
+              <li>C#</li>
+            </ul>
+            <h3 style="margin-top:0.7rem">Database</h3>
+            <ul>
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+            </ul>
+          </div>
+          <div class="skills-col">
+            <h3>Web Technologies</h3>
+            <ul>
+              <li>HTML</li>
+              <li>Tailwind CSS</li>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>REST API</li>
+              <li>React</li>
+            </ul>
+            <h3 style="margin-top:0.7rem">Tools</h3>
+            <ul>
+              <li>Git &amp; GitHub</li>
+              <li>Visual Studio Code</li>
+            </ul>
+          </div>
+          <div class="skills-col">
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>Communication</li>
+              <li>Teamwork</li>
+              <li>Problem-solving</li>
+              <li>Time management</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
