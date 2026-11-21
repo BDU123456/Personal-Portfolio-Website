@@ -1,4 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#d7b56d"/>
-  <text x="32" y="42" text-anchor="middle" font-family="Georgia, serif" font-size="26" font-weight="700" fill="#1a1408">BT</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Biruk Taye monogram">
+  <defs>
+    <linearGradient id="tile" x1="8" y1="4" x2="58" y2="62" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#173049"/>
+      <stop offset="1" stop-color="#081018"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="13" y1="12" x2="51" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f3d9a0"/>
+      <stop offset="1" stop-color="#d7b56d"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="17" fill="url(#tile)"/>
+  <rect x="3" y="3" width="58" height="58" rx="16" stroke="#d7b56d" stroke-opacity=".38" stroke-width="2"/>
+  <text x="31" y="43" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="31" font-weight="700" letter-spacing="-3" fill="url(#gold)">BT</text>
+  <path d="M17 50h22" stroke="#7ed0c4" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="46" cy="50" r="2" fill="#7ed0c4"/>
 </svg>
